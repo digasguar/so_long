@@ -6,7 +6,7 @@
 /*   By: dgasco-g <dgasco-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 02:33:31 by dgasco-g          #+#    #+#             */
-/*   Updated: 2025/02/27 21:52:04 by dgasco-g         ###   ########.fr       */
+/*   Updated: 2026/07/26 02:52:38 by dgasco-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ void	load_texture(t_data *data)
 	int		h;
 
 	data->player_w = mlx_xpm_file_to_image(data->mlx, PLAYER_W, &w, &h);
-	if(!data->player_w)
-		ft_printf("patata\n");
 	data->wall = mlx_xpm_file_to_image(data->mlx, WALL, &w, &h);
 	data->floor = mlx_xpm_file_to_image(data->mlx, FLOOR, &w, &h);
 	data->coins = mlx_xpm_file_to_image(data->mlx, COIN, &w, &h);
